@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/adapter_item_outside_layout_padding_style"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        style="@style/adapter_item_inside_layout_padding_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_layout_border" >
+
+        <ImageView
+            android:id="@id/item_layout_imageview"
+            style="@style/item_smart_icon_imageview_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iconloading" />
+
+        <TextView
+            android:id="@id/item_layout_title"
+            style="@style/item_layout_title"
+            android:layout_alignTop="@id/item_layout_imageview"
+            android:layout_marginBottom="6dp"
+            android:layout_toRightOf="@id/item_layout_imageview"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/item_image_text_padding"
+            android:singleLine="true"
+            android:text="的撒建立喀什" />
+
+        <Button
+            android:id="@id/item_view_operation"
+            style="@style/item_operation_download_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/gift_obtain" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/item_layout_title"
+            android:layout_marginBottom="4dp"
+            android:layout_toLeftOf="@id/item_view_operation"
+            android:layout_toRightOf="@id/item_layout_imageview"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@id/gift_condition_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/item_image_text_padding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gift_condition"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@id/gift_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="我觉得垃圾大量"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/residue_gift_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/item_image_text_padding" >
+
+                <LinearLayout
+                    android:id="@id/residue_gift_text_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/item_layout_residue_gift"
+                        android:text="@string/gift_residue_size" />
+
+                    <TextView
+                        android:id="@id/item_textview_send"
+                        style="@style/item_layout_residue_gift"
+                        android:text="89"
+                        android:textColor="@color/text_hightlight" />
+
+                    <TextView
+                        style="@style/item_layout_residue_gift"
+                        android:text="@string/special_slash" />
+
+                    <TextView
+                        android:id="@id/item_textview_total"
+                        style="@style/item_layout_residue_gift"
+                        android:text="200" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/gift_startime_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/item_layout_residue_gift"
+                        android:text="@string/gift_starttime" />
+
+                    <TextView
+                        android:id="@id/gift_startime_textview"
+                        style="@style/item_layout_residue_gift" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/item_projection_line" />
+
+</RelativeLayout>

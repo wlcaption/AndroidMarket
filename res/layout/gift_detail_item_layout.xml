@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gift_item_detail_outside_layout_padding_style"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        style="@style/adapter_item_inside_layout_padding_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/item_layout_imageview"
+            style="@style/item_smart_icon_imageview_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iconloading" />
+
+        <Button
+            android:id="@id/item_view_operation"
+            style="@style/item_operation_attention_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/add_fav" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_toLeftOf="@id/item_view_operation"
+            android:layout_toRightOf="@id/item_layout_imageview"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/item_layout_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="礼包名称"
+                android:textColor="@color/text_brief"
+                android:textSize="17.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/item_layout_residue_gift"
+                    android:text="@string/gift_residue_size" />
+
+                <TextView
+                    android:id="@id/item_layout_send"
+                    style="@style/item_layout_residue_gift"
+                    android:text="0"
+                    android:textColor="@color/text_hightlight" />
+
+                <TextView
+                    style="@style/item_layout_residue_gift"
+                    android:text="@string/special_slash" />
+
+                <TextView
+                    android:id="@id/item_layout_total"
+                    style="@style/item_layout_residue_gift"
+                    android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

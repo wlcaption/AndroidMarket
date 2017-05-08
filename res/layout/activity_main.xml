@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@id/group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/toolbar_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="3.0dip"
+                android:paddingTop="3.0dip" >
+
+                <RadioButton
+                    android:id="@id/radio_button1"
+                    style="@style/toolbar_button_style"
+                    android:drawableTop="@drawable/icon_game_selector"
+                    android:checked="true"
+                    android:text="@string/toolbar_home" />
+
+                <RadioButton
+                    android:id="@id/radio_button2"
+                    style="@style/toolbar_button_style"
+                    android:drawableTop="@drawable/icon_gift_selector"
+                    android:text="@string/toolbar_gift" />
+
+                <RadioButton
+                    android:id="@id/radio_button3"
+                    style="@style/toolbar_button_style"
+                    android:drawableTop="@drawable/icon_down_selector"
+                    android:text="@string/toolbar_down" />
+
+                <RadioButton
+                    android:id="@id/radio_button4"
+                    style="@style/toolbar_button_style"
+                    android:drawableTop="@drawable/icon_activity_selector"
+                    android:text="@string/toolbar_person" />
+            </RadioGroup>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_above="@id/group"
+                android:layout_alignParentTop="true"
+                android:background="#fff5f5f5" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_above="@id/group"
+                android:background="@drawable/bottom_bar_shadow" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </TabHost>
+
+</RelativeLayout>

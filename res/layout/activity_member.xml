@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/soft_comment_title_content_windows"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/titlecon"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_marginTop="5dp"
+        layout="@layout/header_home" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@id/myProfile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/userinfo_profile_item" />
+
+            <TextView
+                android:id="@id/btn_account"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/item_bg"
+                android:gravity="center_vertical"
+                android:text="账户信息" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/item_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/btn_qiandao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="我要签到" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#dddbdb" />
+
+                <TextView
+                    android:id="@id/btn_mygift"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="我的礼包" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#dddbdb" />
+
+                <TextView
+                    android:id="@id/btn_clear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="清除安装包" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#dddbdb" />
+
+                <TextView
+                    android:id="@id/btn_about"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="关于我们" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#dddbdb" />
+
+                <TextView
+                    android:id="@id/btn_fankui"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="意见反馈" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#dddbdb" />
+
+                <TextView
+                    android:id="@id/btn_version"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="检测更新" />
+                  <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#dddbdb" />
+
+                <TextView
+                    android:id="@+id/btn_app"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="更多惊喜" />
+            </LinearLayout>
+
+            <Button
+                android:id="@id/bt_login"
+                style="@style/CustomBigLoginButton"
+                android:text="会员登录" />
+
+            <Button
+                android:id="@id/bt_logout"
+                style="@style/CustomBigOrangeButton"
+                android:text="我要注销"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

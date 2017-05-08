@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/titlecon"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:background="@color/soft_comment_title_content_windows" >
+
+    <ImageView
+        android:id="@id/top_bar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/top_bar_icon" />
+
+    <TextView
+        android:id="@id/txtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="85.0dip"
+        android:layout_marginRight="85.0dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/toolbar_home"
+        android:textColor="@color/grayslate"
+        android:textSize="20.0sp" />
+
+    <ImageButton
+        android:id="@id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/headsearch_button_xml"
+        android:onClick="search" />
+
+</RelativeLayout>

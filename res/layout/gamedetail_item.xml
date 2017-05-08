@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/adapter_item_outside_layout_padding_style"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@id/item_inside_layout"
+        style="@style/adapter_item_inside_layout_padding_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_layout_border" >
+
+        <ImageView
+            android:id="@id/item_layout_imageview"
+            style="@style/item_smart_icon_imageview_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/iconloading" />
+
+        <FrameLayout
+            android:id="@id/item_view_operation"
+            android:layout_width="@dimen/default_button_width"
+            android:layout_height="@dimen/default_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@id/item_layout_title"
+            style="@style/item_layout_title"
+            android:layout_alignTop="@id/item_layout_imageview"
+            android:layout_toLeftOf="@id/item_view_operation"
+            android:layout_toRightOf="@id/item_layout_imageview"
+            android:paddingLeft="@dimen/item_image_text_padding"
+            android:text="刀塔传奇" />
+
+        <Button
+            android:id="@id/guanzhuBtn"
+            style="@style/item_operation_attention_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/add_fav" />
+
+        <TextView
+            android:id="@id/item_layout_download"
+            style="@style/item_layout_download"
+            android:layout_alignBottom="@id/item_layout_imageview"
+            android:layout_toRightOf="@id/item_layout_imageview"
+            android:paddingLeft="@dimen/item_image_text_padding"
+            android:text="2234341"
+            android:textColor="@color/item_download_click" />
+
+        <TextView
+            style="@style/item_layout_download"
+            android:layout_alignBottom="@id/item_layout_imageview"
+            android:layout_toRightOf="@id/item_layout_download"
+            android:text="@string/down_load_name" />
+
+        <TextView
+            android:id="@id/item_layout_content"
+            style="@style/item_layout_content"
+            android:layout_below="@id/item_layout_title"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/item_layout_imageview"
+            android:paddingLeft="@dimen/item_image_text_padding"
+            android:paddingTop="2.0dip"
+            android:singleLine="true"
+            android:text="棋牌卡牌 122MB" />
+
+        <TextView
+            android:id="@id/game_apk"
+            style="@style/item_layout_title"
+            android:text=""
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

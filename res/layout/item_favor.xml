@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="86.0dip"
+    android:background="@drawable/item"
+    android:drawingCacheQuality="high"
+    android:minHeight="90.0dip"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_marginBottom="3.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="3.0dip"
+        android:background="@drawable/iconloading" />
+
+    <ImageView
+        android:id="@id/hItemIcon"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_marginBottom="3.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="3.0dip"
+        android:src="@drawable/gameicon"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@id/hItemUpdateTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/hItemIcon"
+        android:layout_alignTop="@id/hItemIcon"
+        android:layout_marginRight="-8.0dip"
+        android:background="@drawable/updatetips"
+        android:gravity="center_vertical"
+        android:paddingLeft="2.0dip"
+        android:paddingRight="2.0dip"
+        android:text="@string/newchapter"
+        android:textColor="#ffffffff"
+        android:textSize="9.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/hItemIcon"
+        android:layout_alignTop="@id/hItemIcon"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="42.0dip"
+        android:layout_toRightOf="@id/hItemIcon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/hItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5.0dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="自由之战"
+            android:textColor="@color/listTitle"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@id/hItemInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="角色扮演 20.45MB"
+            android:textColor="@color/text"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/hItemNextUpdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="收藏时间 2015-08-22 12:20"
+            android:textColor="@color/text"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@id/hItemBtn"
+        android:layout_width="45.0dip"
+        android:layout_height="70.0dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/his_item_button"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@drawable/his_item_btn" />
+
+</RelativeLayout>

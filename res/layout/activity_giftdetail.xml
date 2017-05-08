@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background" >
+
+    <include
+        android:id="@id/title_item_layout"
+        android:layout_alignParentTop="true"
+        layout="@layout/include_back_title_item_layout" />
+
+    <LinearLayout
+        android:id="@id/gitf_detail_root_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/gift_status_layout"
+        android:layout_below="@id/title_item_layout" >
+
+        <ScrollView
+            android:id="@id/gift_detail_scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="5.0dip" >
+
+                    <include layout="@layout/gift_detail_item_layout" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginLeft="@dimen/gift_item_left_or_right_padding"
+                        android:layout_marginRight="@dimen/gift_item_left_or_right_padding"
+                        android:background="@color/bg_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/text_padding"
+                        android:paddingLeft="@dimen/gift_item_left_or_right_padding"
+                        android:paddingRight="@dimen/gift_item_left_or_right_padding"
+                        android:paddingTop="@dimen/text_padding" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gift_type" />
+
+                            <TextView
+                                android:id="@id/gift_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="礼包"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gift_starttime" />
+
+                            <TextView
+                                android:id="@id/gift_starttime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="2015-06-20"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/text_padding"
+                        android:paddingLeft="@dimen/gift_item_left_or_right_padding"
+                        android:paddingRight="@dimen/gift_item_left_or_right_padding"
+                        android:paddingTop="@dimen/text_padding" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gift_draw" />
+
+                            <TextView
+                                android:id="@id/gift_draw"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textColor="@color/text_hightlight" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gift_endtime" />
+
+                            <TextView
+                                android:id="@id/gift_endtime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="2016-01-01"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/text_padding"
+                        android:paddingLeft="@dimen/gift_item_left_or_right_padding"
+                        android:paddingRight="@dimen/gift_item_left_or_right_padding"
+                        android:paddingTop="@dimen/text_padding" >
+
+                        <LinearLayout
+                            android:id="@id/gift_gain_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@id/gift_gain_operation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:background="@color/item_operation_forum"
+                                android:paddingLeft="3.0dip"
+                                android:paddingRight="3.0dip"
+                                android:singleLine="true"
+                                android:text="@string/gift_gain_gold"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@id/gift_gain_layout"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gift_condition" />
+
+                            <TextView
+                                android:id="@id/gift_condition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="免费"
+                                android:textColor="@color/gray" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/gift_option" />
+
+                <LinearLayout
+                    android:id="@id/gift_content_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/gift_item_top_or_bottom_padding"
+                    android:paddingTop="@dimen/gift_item_top_or_bottom_padding" >
+
+                    <TextView
+                        android:id="@id/gift_neirong"
+                        style="@style/item_layout_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15.0dip"
+                        android:text="礼包内容" />
+
+                    <TextView
+                        android:id="@id/gift_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15.0dip"
+                        android:text=""
+                        android:textColor="@color/gray"
+                        android:textSize="16.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/gift_content_view2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="260.0dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ListView
+                        android:id="@id/lblist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/itembg"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@drawable/list_line"
+                        android:fadingEdge="none"
+                        android:listSelector="#00000000"
+                        android:scrollbarThumbVertical="@drawable/scrollbar"
+                        android:scrollingCache="false" >
+
+                        <requestFocus />
+                    </ListView>
+
+                    <include
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/giftempty" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include
+        android:id="@id/gift_status_layout"
+        layout="@layout/include_toolbar_gift_state_layout" />
+
+    <com.app.component.ErrorHintView
+        android:id="@+id/hintView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

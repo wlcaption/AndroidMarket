@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/scrollGallery"
+        android:focusableInTouchMode="true" >
+
+        <requestFocus />
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:layout_alignBottom="@id/viewPager"
+        android:background="#88000000" >
+
+        <LinearLayout
+            android:id="@id/ly_pager_point"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:gravity="right|center"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/v_dot0"
+                style="@style/dot_style"
+                android:background="@drawable/dot_focused" />
+
+            <View
+                android:id="@+id/v_dot1"
+                style="@style/dot_style" />
+
+            <View
+                android:id="@+id/v_dot2"
+                style="@style/dot_style" />
+
+            <View
+                android:id="@+id/v_dot3"
+                style="@style/dot_style" />
+
+            <View
+                android:id="@+id/v_dot4"
+                style="@style/dot_style" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@id/ly_pager_point"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="5.0dip"
+            android:shadowColor="@color/maincolor"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:text="全民斗西游"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

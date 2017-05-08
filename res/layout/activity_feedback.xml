@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:game="http://schemas.android.com/apk/res/com.game.shouyou"
+    android:id="@id/screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/soft_comment_title_content_windows"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/titlecon"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip" >
+
+        <ImageView
+            android:id="@id/backimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:onClick="back"
+            android:src="@drawable/back_button_xml" />
+
+        <TextView
+            android:id="@id/titleTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="85.0dip"
+            android:layout_marginRight="85.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="意见反馈"
+            android:textColor="@color/grayslate"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@id/text1"
+                style="@style/text_color_black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="10.0dip"
+                android:text="欢迎您提出宝贵的意见和建议。"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@id/feedback_content"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:gravity="top"
+                android:background="@drawable/item_bg"
+                android:hint="请输入您的意见和建议(字数500以内)"
+                android:maxLength="500" />
+
+            <EditText
+                android:id="@id/feedback_email"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/item_bg"
+                android:hint="您的邮箱(选填)"
+                android:inputType="text" />
+
+            <Button
+                android:id="@id/submit"
+                style="@style/CustomBigOrangeButton"
+                android:text="提交" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

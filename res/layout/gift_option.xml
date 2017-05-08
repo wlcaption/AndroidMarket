@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/adapter_item_outside_layout_padding_style"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5.0dip"
+    android:paddingLeft="0.0dip"
+    android:paddingRight="0.0dip" >
+
+    <RadioGroup
+        android:id="@id/rgp_gift_option"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@id/gift_option_content"
+            style="@style/option_gift_two_button_style"
+            android:checked="true"
+            android:drawableLeft="@drawable/option_selector"
+            android:text="@string/gift_option_content" />
+
+        <RadioButton
+            android:id="@id/gift_option_about"
+            style="@style/option_gift_two_button_style"
+            android:drawableLeft="@drawable/option_selector"
+            android:text="@string/gift_option_about" />
+    </RadioGroup>
+
+</RelativeLayout>

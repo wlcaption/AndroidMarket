@@ -1,0 +1,218 @@
+android.support.annotation.AnimRes
+android.support.annotation.AnimatorRes
+android.support.annotation.AnyRes
+android.support.annotation.ArrayRes
+android.support.annotation.AttrRes
+android.support.annotation.BoolRes
+android.support.annotation.ColorRes
+android.support.annotation.DimenRes
+android.support.annotation.DrawableRes
+android.support.annotation.FractionRes
+android.support.annotation.IdRes
+android.support.annotation.IntDef
+android.support.annotation.IntegerRes
+android.support.annotation.InterpolatorRes
+android.support.annotation.LayoutRes
+android.support.annotation.MenuRes
+android.support.annotation.NonNull
+android.support.annotation.Nullable
+android.support.annotation.PluralsRes
+android.support.annotation.RawRes
+android.support.annotation.StringDef
+android.support.annotation.StringRes
+android.support.annotation.StyleRes
+android.support.annotation.StyleableRes
+android.support.annotation.XmlRes
+com.app.activity.CategoryActivity:
+    private static final java.lang.String URL_PATH
+com.app.activity.Download1Activity:
+    private static final java.lang.String URL_PATH
+com.app.activity.Download2Activity:
+    private static final java.lang.String URL_PATH
+com.app.activity.Download3Activity:
+    private static final java.lang.String URL_PATH
+com.app.activity.Game1Activity:
+    private static final java.lang.String URL_PATH
+com.app.activity.GameDetailActivity:
+    private static final java.lang.String URL_PATH
+com.app.activity.GameGiftActivity:
+    private static final java.lang.String URL_PATH
+com.app.activity.GiftHotActivity:
+    private static final java.lang.String URL_PATH
+com.app.activity.GiftTuijianActivity:
+    private static final java.lang.String URL_PATH
+com.app.activity.Main1Activity:
+    private static final java.lang.String URL_PATH
+com.app.activity.MainActivity:
+    private static final int INTERVAL
+com.app.activity.SearchActivity:
+    private static final java.lang.String URL_PATH
+    private static final int FEEDKEY_START
+com.app.activity.SignInActivity:
+    41:45:public static int getCurrentMonthDay()
+com.app.activity.SplashActivity:
+    android.widget.ImageView imageview1
+    59:68:public void gotoActivity()
+com.app.activity.UpdateIconActivity:
+    private static final int IMAGE_REQUEST_CODE
+    private static final int CAMERA_REQUEST_CODE
+    private static final int RESULT_REQUEST_CODE
+com.app.adapter.DownAdapter:
+    36:36:static synthetic com.app.download.DownloadManager access$0(com.app.adapter.DownAdapter)
+com.app.adapter.DownAdapter$MyOnClickListener
+com.app.adapter.HistoryAdapter:
+    31:31:public com.app.activity.Download3Activity getActivity()
+com.app.adapter.ViewPagerAdapter:
+    27:27:public com.app.adapter.ViewPagerAdapter$ImageClickListener getImgClickListener()
+com.app.base.BaseActivity:
+    64:70:protected void startActivity(java.lang.String,android.os.Bundle)
+    102:103:protected void showShortToast(int)
+com.app.base.BaseFragment
+com.app.base.BaseMyAdapter:
+    38:41:public void updateData(java.util.List)
+    44:44:public java.util.Map getNumMap()
+    48:49:public void setNumMap(java.util.Map)
+    79:84:public void appendToTopList(java.util.List)
+    92:97:public void appendToTop(java.lang.Object)
+    105:110:public void appendToLast(java.lang.Object)
+com.app.base.Constant
+com.app.component.CalendarView:
+    private static final java.lang.String TAG
+    366:366:public boolean isSelectMore()
+com.app.component.ErrorHintView:
+    android.view.View noData
+    159:160:public void noData()
+com.app.component.ErrorHintView$NoDataError
+com.app.component.KeywordsFlow:
+    public static final int IDX_X
+    public static final int IDX_Y
+    public static final int IDX_TXT_LENGTH
+    public static final int IDX_DIS_Y
+    public static final int ANIMATION_IN
+    public static final int ANIMATION_OUT
+    public static final int OUTSIDE_TO_LOCATION
+    public static final int LOCATION_TO_OUTSIDE
+    public static final int CENTER_TO_LOCATION
+    public static final int LOCATION_TO_CENTER
+    public static final long ANIM_DURATION
+    public static final int MAX
+    public static final int TEXT_SIZE_MAX
+    public static final int TEXT_SIZE_MIN
+    420:421:public void rubAllViews()
+com.app.component.NumberProgressBar:
+    private static final java.lang.String INSTANCE_STATE
+    private static final java.lang.String INSTANCE_TEXT_COLOR
+    private static final java.lang.String INSTANCE_TEXT_SIZE
+    private static final java.lang.String INSTANCE_REACHED_BAR_HEIGHT
+    private static final java.lang.String INSTANCE_REACHED_BAR_COLOR
+    private static final java.lang.String INSTANCE_UNREACHED_BAR_HEIGHT
+    private static final java.lang.String INSTANCE_UNREACHED_BAR_COLOR
+    private static final java.lang.String INSTANCE_MAX
+    private static final java.lang.String INSTANCE_PROGRESS
+    358:361:public void incrementProgressBy(int)
+com.app.component.PromptDialog:
+    public static final int VIEW_STYLE_NORMAL
+    public static final int VIEW_STYLE_TITLEBAR
+    public static final int VIEW_STYLE_TITLEBAR_SKYBLUE
+    public static final int BUTTON_COUNT_ZERO
+    public static final int BUTTON_COUNT_ONE
+    public static final int BUTTON_COUNT_TWO
+    public static final int BUTTON_COUNT_THREE
+    public static final int BUTTON_1
+    public static final int BUTTON_2
+    public static final int BUTTON_3
+    48:50:protected PromptDialog(android.content.Context,boolean)
+com.app.component.PromptDialog$Builder:
+    104:108:public PromptDialog$Builder(android.content.Context,int)
+    133:133:public android.content.Context getContext()
+    137:138:public com.app.component.PromptDialog$Builder setTitleBarGravity(int)
+    147:148:public com.app.component.PromptDialog$Builder setTitle(int)
+    152:153:public com.app.component.PromptDialog$Builder setTitleColor(int)
+    157:158:public com.app.component.PromptDialog$Builder setTitleColor(android.content.res.ColorStateList)
+    162:163:public com.app.component.PromptDialog$Builder setTitleSize(float)
+    167:168:public com.app.component.PromptDialog$Builder setIcon(android.graphics.drawable.Drawable)
+    172:173:public com.app.component.PromptDialog$Builder setIcon(int)
+    183:185:public com.app.component.PromptDialog$Builder setMessage(int,com.app.component.PromptDialog$OnLinearClickListener)
+    189:191:public com.app.component.PromptDialog$Builder setMessage2(java.lang.CharSequence,com.app.component.PromptDialog$OnLinearClickListener)
+    195:197:public com.app.component.PromptDialog$Builder setMessage2(int,com.app.component.PromptDialog$OnLinearClickListener)
+    201:202:public com.app.component.PromptDialog$Builder setMessageColor(int)
+    206:207:public com.app.component.PromptDialog$Builder setMessageColor(android.content.res.ColorStateList)
+    211:212:public com.app.component.PromptDialog$Builder setMessageSize(float)
+    225:228:public com.app.component.PromptDialog$Builder setButton1(int,com.app.component.PromptDialog$OnClickListener)
+    232:233:public com.app.component.PromptDialog$Builder setButton1TextColor(int)
+    237:238:public com.app.component.PromptDialog$Builder setButton1TextColor(android.content.res.ColorStateList)
+    242:243:public com.app.component.PromptDialog$Builder setButton1Size(float)
+    256:259:public com.app.component.PromptDialog$Builder setButton2(int,com.app.component.PromptDialog$OnClickListener)
+    263:264:public com.app.component.PromptDialog$Builder setButton2TextColor(int)
+    268:269:public com.app.component.PromptDialog$Builder setButton2TextColor(android.content.res.ColorStateList)
+    273:274:public com.app.component.PromptDialog$Builder setButton2Size(float)
+    279:282:public com.app.component.PromptDialog$Builder setButton3(java.lang.CharSequence,com.app.component.PromptDialog$OnClickListener)
+    287:290:public com.app.component.PromptDialog$Builder setButton3(int,com.app.component.PromptDialog$OnClickListener)
+    294:295:public com.app.component.PromptDialog$Builder setButton3TextColor(int)
+    299:300:public com.app.component.PromptDialog$Builder setButton3TextColor(android.content.res.ColorStateList)
+    304:305:public com.app.component.PromptDialog$Builder setButton3Size(float)
+    309:310:public com.app.component.PromptDialog$Builder setCancelable(boolean)
+    314:315:public com.app.component.PromptDialog$Builder setCanceledOnTouchOutside(boolean)
+    319:320:public com.app.component.PromptDialog$Builder setView(android.view.View)
+com.app.component.TitleLinearLayout
+com.app.component.TitleLinearLayout$1
+com.app.component.TitleLinearLayout$RightImageViewOnclikListener
+com.app.encryption.AesEncryption
+com.app.encryption.AesEncryptionHelper
+com.app.encryption.Base64Encryption
+com.app.encryption.DesEncryption
+com.app.encryption.DesEncryptionHelper
+com.app.encryption.Md5Encryption
+com.app.utils.AsyncHttpUtil:
+    13:13:public AsyncHttpUtil()
+    38:39:public static void get(java.lang.String,com.loopj.android.http.RequestParams,com.loopj.android.http.AsyncHttpResponseHandler)
+    47:48:public static void get(java.lang.String,com.loopj.android.http.JsonHttpResponseHandler)
+    58:59:public static void get(java.lang.String,com.loopj.android.http.RequestParams,com.loopj.android.http.JsonHttpResponseHandler)
+    67:68:public static void get(java.lang.String,com.loopj.android.http.BinaryHttpResponseHandler)
+    71:71:public static com.loopj.android.http.AsyncHttpClient getClient()
+    82:83:public static void post(java.lang.String,com.loopj.android.http.RequestParams,com.loopj.android.http.JsonHttpResponseHandler)
+    93:94:public static void post(java.lang.String,com.loopj.android.http.RequestParams,com.loopj.android.http.AsyncHttpResponseHandler)
+com.app.utils.DateConvert:
+    8:8:public DateConvert()
+    11:21:public static java.util.Date convert(java.util.Date)
+    25:27:public static java.lang.String getDateStr(java.util.Date)
+    31:35:public static void SetConvertList(java.util.Set,java.util.List)
+com.app.utils.JsonUtils:
+    19:19:public JsonUtils()
+com.app.utils.MyViewHolder:
+    13:13:public MyViewHolder()
+com.app.utils.SpUtil:
+    private static final java.lang.String KEY_SETTINGS
+    10:10:public SpUtil()
+    20:22:public static void putInt(android.content.Context,java.lang.String,int)
+    30:32:public static void putString(android.content.Context,java.lang.String,java.lang.String)
+    35:36:public static int getInt(android.content.Context,java.lang.String)
+    40:41:public static java.lang.String getString(android.content.Context,java.lang.String)
+    50:51:public static boolean isContains(android.content.Context,java.lang.String)
+    56:58:public static void removeSetting(android.content.Context,java.lang.String)
+com.app.utils.ThreadPoolManager
+com.app.utils.ToolUtil
+com.app.utils.Utils:
+    public static final int AVATAR_IMAGE_SIZE
+    18:18:public Utils()
+    22:25:public static android.animation.ObjectAnimator GenerateColorAnimator(android.content.Context,int,java.lang.Object)
+    29:32:public static android.animation.ObjectAnimator GenerateSlideAnimator(android.content.Context,int,java.lang.Object)
+    36:37:public static void toast(android.content.Context,java.lang.String)
+    40:41:public static void toast(android.content.Context,int)
+    44:44:public static android.graphics.Bitmap getBitMap(java.lang.String)
+    48:65:public static android.graphics.Bitmap getScaledBitMap(java.lang.String,int,int)
+    70:88:public static android.graphics.Bitmap getScaledBitMap(byte[],int,int)
+    93:102:public static byte[] ConvertBitMapToByte(android.graphics.Bitmap)
+com.shop.app.BuildConfig
+com.shop.app.R:
+    10:10:public R()
+com.shop.app.R$anim
+com.shop.app.R$attr
+com.shop.app.R$color
+com.shop.app.R$dimen
+com.shop.app.R$drawable
+com.shop.app.R$id
+com.shop.app.R$layout
+com.shop.app.R$raw
+com.shop.app.R$string
+com.shop.app.R$style

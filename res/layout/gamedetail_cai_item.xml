@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/item_padding" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@id/item_layout_imageview"
+            style="@style/item_smart_icon_imageview_style"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin_top" />
+
+        <TextView
+            android:id="@id/item_layout_title"
+            style="@style/item_layout_title"
+            android:layout_below="@id/item_layout_imageview"
+            android:layout_marginTop="@dimen/item_margin"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="黑暗獠牙"
+            android:textColor="@color/text_brief"
+            android:textSize="@dimen/default_content_text_size" />
+
+        <TextView
+            android:id="@id/item_layout_content"
+            style="@style/item_layout_content"
+            android:layout_below="@id/item_layout_title"
+            android:layout_marginTop="@dimen/item_margin"
+            android:background="@color/item_fg"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/text_download"
+            android:textSize="@dimen/default_content_text_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/layempty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+         >
+
+        <ImageView
+            android:id="@id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bg_no_gift" />
+
+        <TextView
+            android:id="@id/txt_no_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6.0dip"
+            android:text="@string/gift_empty"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/no_content_page_text_size" />
+
+        <Button
+            android:id="@id/btn_no_content_goto_gift"
+            android:layout_width="145.0dip"
+            android:layout_height="@dimen/no_content_btn_height"
+            android:layout_below="@id/txt_no_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8.0dip"
+            android:background="@drawable/btn_log"
+            android:gravity="center"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:text="@string/no_content_goto_gift"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

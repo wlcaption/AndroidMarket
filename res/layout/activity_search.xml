@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/soft_comment_title_content_windows"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/titlecon"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip" >
+
+        <ImageButton
+            android:id="@id/backButton"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:onClick="back"
+            android:src="@drawable/back_button_xml" />
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/searchhint"
+            android:textColor="@color/grayslate"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_below="@id/titlecon"
+        android:background="@drawable/search_bar_bg" >
+
+        <Button
+            android:id="@id/searchBtn"
+            android:layout_width="22.0dip"
+            android:layout_height="22.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/search_button_xml"
+            android:contentDescription="@string/app_name" />
+
+        <EditText
+            android:id="@id/searchText"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@id/searchBtn"
+            android:background="@drawable/search_input_bg"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="-5.0dip"
+            android:hint="@string/searchhint"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="32.0dip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textColorHint="#ffcccccc" />
+
+        <ImageButton
+            android:id="@id/searchClearBtn"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignRight="@id/searchText"
+            android:layout_alignTop="@id/searchText"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/clear_botton_xml"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/linearLayout1"
+         >
+    </ListView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/linearLayout1" >
+
+        <com.app.component.ErrorHintView
+            android:id="@+id/hintView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+             />
+
+        <ListView
+            android:id="@+id/dataList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/itembg"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/list_line"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            android:scrollingCache="false"
+            android:visibility="gone" >
+
+            <requestFocus />
+        </ListView>
+
+        <RelativeLayout
+            android:id="@id/searchcon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@id/searchhottip"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:background="@drawable/itembg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:text="@string/searchhottip"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+
+            <com.app.component.KeywordsFlow
+                android:id="@+id/keywordsflow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/searchhottip" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
